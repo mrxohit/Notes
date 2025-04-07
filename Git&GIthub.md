@@ -26,33 +26,34 @@ Install Git: https://git-scm.com/downloads
 
 Configuration (First Time Only):
 
-git config --global user.name "Your Name"
+git `config` `--global user.name` "`Your Name`"
 
-git config --global user.email "your@email.com"
+git `config` `--global user.email` "`your@email.com`"
 
 -------------------------------------------------------------------------------------------------------------------
 
 ## 4. Basic Git Commands
 
-git init – Nayi Git repository banata hai
+git `init` – Nayi Git repository banata hai
 
-git status – Changes aur repo ka status dikhata hai
+git `status` – Changes aur repo ka status dikhata hai
 
-git add <file> – File ko staging area mein daalta hai
+git `add` `file` – File ko staging area mein daalta hai
 
-git add . – Saari files ko stage karta hai
+git `add` ` .` – Saari files ko stage karta hai
 
-git commit -m "message" – Staged files ko repo mein commit karta hai
+git `commit -m` "`message`" – Staged files ko repo mein commit karta hai
 
-git log – Commit history show karta hai
+git `log` – Commit history show karta hai
 
-git diff – Changes dikhata hai
+git `diff` – Changes dikhata hai
 
-git diff  <branch1>..<branch2> - do branch main changes dikhata hai
+git `diff`  `branch1..branch2` - do branch main changes dikhata hai
 
-git diff  <commit#1>..<commit#2> -do specific commits  main changes dikhata hai
+git `diff`    `commit#1..commit#2` -do specific commits  main changes dikhata hai
 
-git config --list – Current config show karta hai
+git `config` `--list` – Current config show karta hai 
+
 
 -------------------------------------------------------------------------------------------------------------------
 
@@ -63,21 +64,21 @@ Branch: Code ka separate line of development.
 Merge: Ek branch ke changes ko doosri mein milana.
 
 
-git branch – Branch list
+git `branch` – Branch list
 
-git branch <name> – New branch
+git `branch` `name` – New branch
 
-git checkout <name> –  Switch branch
+git `checkout` `name` –  Switch branch
 
-git switch <name> ­ – Switch branch
+git `switch` `name` ­ – Switch branch
 
-git switch -c <name> – Create branch and Switch with newly created  branch
+git `switch -c` `name` – Create branch and Switch with newly created  branch
 
-git merge <name> – Merge branch
+git `merge` `name` – Merge branch
 
-git branch -m <old branch name> <new branch name> - rename branch
+git `branch -m` `old branch name` `new branch name` - rename branch
 
-git branch -d <branch name> - delete branch
+git `branch -d` `branch name` - delete branch
 
 -------------------------------------------------------------------------------------------------------------------
 
@@ -85,34 +86,34 @@ git branch -d <branch name> - delete branch
 
 GitHub se connect karna:
 
-git remote add origin <repo-url>
+git `remote add origin` `repo-url`
 
-git push -u origin main
+git `push -u origin main`
 
 
 ### Remote Commands: 
 
-git clone <url> – Remote repo ko local mein lata hai
+git `clone` `url` – Remote repo ko local mein lata hai
 
-git remote -v – Remote repo ka URL dikhata hai
+git `remote -v` – Remote repo ka URL dikhata hai
 
-git pull – Remote se latest changes lata hai
+git `pull` – Remote se latest changes lata hai
 
-git push – Local commits ko remote repo pe bhejta hai
+git `push` – Local commits ko remote repo pe bhejta hai
 
 -------------------------------------------------------------------------------------------------------------------
 
 ## 7. Undo Commands
 
-git checkout -- <file> – File ko last commit wali state pe laata hai
+git `checkout` --`file` – File ko last commit wali state pe laata hai
 
-git reset <file> – File ko staging se hata deta hai
+git `reset` `file` – File ko staging se hata deta hai
 
-git reset --soft HEAD~1 – Last commit remove karta hai (changes bache rehte hain)
+git `reset --soft` `HEAD~1` – Last commit remove karta hai (changes bache rehte hain)
 
 /* head is cuurent directory*/
 
-git reset --hard HEAD~1 – Last commit + changes dono hata deta hai (dangerous)
+git `reset --hard` `HEAD~1` – Last commit + changes dono hata deta hai (dangerous)
 
 
 -------------------------------------------------------------------------------------------------------------------
@@ -135,7 +136,7 @@ node_modules/
 
 git reflog – Git ki hidden history. Kab kya branch ya commit checkout hua, sabka record.
 
-git reflog <commit#> -specific commit ko 
+git `reflog` `commit#` -specific commit ko 
 
 -------------------------------------------------------------------------------------------------------------------
 
@@ -143,11 +144,11 @@ git reflog <commit#> -specific commit ko
 
 Tags ka use specific version ya release mark karne ke liye hota hai.
 
-git tag v1.0
+git `tag` v1.0
 
-git tag – List tags
+git `tag` – List tags
 
-git show v1.0 – Show tag details
+git `show v1.0` – Show tag details
 
 -------------------------------------------------------------------------------------------------------------------
 
@@ -155,25 +156,25 @@ git show v1.0 – Show tag details
 
 Jab kaam beech mein ho aur switch karna ho bina commit kiye:
 
-git stash – Save current changes
+git `stash` – Save current changes
 
-git stash pop - apply and drop  
+git `stash pop` - apply and drop  
 
-git stash list – List all stashes
+git `stash list` – List all stashes
 
-git stash apply – Wapas lana
+git `stash apply` – Wapas lana
 
-git stash clear - stash clear 
+git` stash clear` - stash clear 
 
-git stash drop - drop stash
+git `stash drop` - drop stash
 
 -------------------------------------------------------------------------------------------------------------------
 
 ## 12. Aliases (Shortcuts)
 
-git config --global alias.s status
+git `config --global alias.s status`
 
-git config --global alias.ci commit
+git `config --global alias.ci commit`
 
 Ab git s likhke git status milega.
 
@@ -232,7 +233,7 @@ GitHub ek online platform hai jahan developers apna code Git ke through host kar
 
 Local machine pe kaam karne ke liye repo ko clone karte hain:
 
-git clone <repo-url>
+git clone `repo-url`
 
 Example:
 
@@ -246,13 +247,13 @@ git clone https://github.com/username/repo.git
    
 2. Use Git commands se commit karo:
 
-   git add .
+   git `add .`
    
-   git commit -m "message"
+   git `commit -m` "`message`"
    
 3. Fir GitHub pe push karo:
 
-   git push origin main
+   git `push origin main`
    
 -------------------------------------------------------------------------------------------------------------------
 
